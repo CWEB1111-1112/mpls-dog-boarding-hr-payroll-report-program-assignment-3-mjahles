@@ -31,7 +31,7 @@ namespace assignment_three
             //Intake of employee info
             while(x < x + 1){
                 x++;
-                Console.WriteLine("Please input the Employee's first name:");
+                Console.WriteLine("Please input the Employee's first name (input 999 to exit):");
                 firstName = Console.ReadLine();
                 if(firstName != END){    
                     Console.WriteLine("Please input the Employee's last name:");
