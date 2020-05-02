@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment3\\assignment3.csproj": {}
+    "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment_three\\assignment_three.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment3\\assignment3.csproj": {
+    "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment_three\\assignment_three.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment3\\assignment3.csproj",
-        "projectName": "assignment3",
-        "projectPath": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment3\\assignment3.csproj",
+        "projectUniqueName": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment_three\\assignment_three.csproj",
+        "projectName": "assignment_three",
+        "projectPath": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment_three\\assignment_three.csproj",
         "packagesPath": "C:\\Users\\ahlmatj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment3\\obj\\",
+        "outputPath": "C:\\Users\\ahlmatj\\Desktop\\Programming Fund II\\assignment_three\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahlmatj\\AppData\\Roaming\\NuGet\\NuGet.Config"

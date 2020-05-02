@@ -13,6 +13,15 @@ namespace assignment_three
         static void Main(string[] args)
         {
             //Declarations
+            string firstName;
+            string lastName;
+            int departmentNumber;
+            int salary;
+            int hoursWorked;
+            const string END = "999";
+            
         }
+
+
     }
 }
