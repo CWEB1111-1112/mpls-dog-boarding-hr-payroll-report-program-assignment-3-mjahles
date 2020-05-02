@@ -21,19 +21,19 @@ namespace assignment_three
             int hoursWorked;
             const string END = "999";
             double grossSalary;
-            string [] departmentName = {"Personnel", "Marketing", "Information Technology", "Computer Services", "Sales", "Legal", "Accounting"};
-            double [] departmentSalary = {0, 0, 0, 0, 0, 0, 0,};
+            string [] departmentName = {"Personnel", "Marketing", "Information Technology", "Computer Services", "Sales", "Legal", "Accounting"};  //Array for the department names
+            double [] departmentSalary = {0, 0, 0, 0, 0, 0, 0,};  //Array for the gross salary of the various departments (parallel with the departmentName array)
             int x = 0;
             
             //List that contains employee info object instances
             List<Info> employeeInfoList = new List<Info>();
 
             //Intake of employee info
-            while(x < x + 1){
+            while(x < x + 1){ //Loop that allows the user to endlessly enter in employee data
                 x++;
                 Console.WriteLine("Please input the Employee's first name (input 999 to exit):");
                 firstName = Console.ReadLine();
-                if(firstName != END){    
+                if(firstName != END){ //Statment that allows the user to enter the sentinel value of 999 to end the loop
                     Console.WriteLine("Please input the Employee's last name:");
                     lastName = Console.ReadLine();
                     Console.WriteLine("Please input the Employee's department number:");
@@ -53,17 +53,19 @@ namespace assignment_three
                     
                     Info anEmployee = new Info(firstName, lastName, departmentNumber, salary, hoursWorked, grossSalary);  //Creating the new Info object
                     employeeInfoList.Add(anEmployee); //Adding the employee to the list using the Add() method
-                    Console.WriteLine($"Employee's Name: {firstName} {lastName}\nGross salary: {grossSalary}\nDepartment Name: {departmentName[departmentNumber - 1]}");
-                    departmentSalary[departmentNumber-1] = grossSalary + departmentSalary[departmentNumber-1];
+                    Console.WriteLine($"Employee's Name: {firstName} {lastName}\nGross salary: {grossSalary}\nDepartment Name: {departmentName[departmentNumber - 1]}"); //This outputs the current employee's information
+                    departmentSalary[departmentNumber-1] = grossSalary + departmentSalary[departmentNumber-1]; //This adds the gross salary for the current employee to the total gross salary for the department they are in.
                 }
                 else{
-                    break;
+                    break;  //This tells the loop to stop when the sentinel value is entered the firstName variable
                 }
             }
+            //Output of the department gross salaries
             Console.WriteLine($"{departmentName[0]} Gross Salary: {departmentSalary[0]}\n{departmentName[1]} Gross Salary: {departmentSalary[1]}\n{departmentName[2]} Gross Salary: {departmentSalary[2]}\n{departmentName[3]} Gross Salary: {departmentSalary[3]}\n{departmentName[4]} Gross Salary: {departmentSalary[4]}\n{departmentName[5]} Gross Salary: {departmentSalary[5]}\n{departmentName[6]} Gross Salary: {departmentSalary[6]}");
         }
     }
     //Separate class used for making the List type
+    //Ended up being unnecessary but was useful for learning the lecture materials better
     class Info
     {
         public string firstName {get; set;}
