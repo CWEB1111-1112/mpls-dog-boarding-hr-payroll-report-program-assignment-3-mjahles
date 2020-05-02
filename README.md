@@ -4,6 +4,7 @@ The MPLS Dogboarding academy wants to incorporate functionality that allows the 
 
 
 
+
 ## Requirements
 
 Construct a program that allows the end-user to input each employee’s name, department number, hourly salary, and number of hours worked.   Within each iteration of entering employee information, display the employee’s name, gross salary and department name.  Declare an array that will hold the accumulated salary for each department and declare an array that holds each of the Department names. Once the end-user concludes entering employee data, you will need to output is a list of the seven departments in the company and the total gross payroll (rate times hours) for each department. The department names are shown in the table below.  
